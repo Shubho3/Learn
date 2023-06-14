@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp"
+        android:background="@color/colorSecondary">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:layout_margin="-1dp"
+
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_margin="30dp"
+                        android:src="@drawable/contact_to_company_img"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_baseline_call"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/_10sdp"
+                        android:text="+48603656744"
+                        android:textColor="@color/texts"
+                        android:textColorHint="@color/texts"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_email"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp"
+                        android:text="biuro@sebateks.pl"
+                        android:textColor="@color/texts"
+                        android:textColorHint="@color/texts"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/edt_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_baseline_web"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/message"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:text="www.sebateks.pl"
+                        android:textColor="@color/texts"
+                        android:textColorHint="@color/texts"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:outlineProvider="background"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/submit"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:backgroundTint="@color/colorPrimary"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:rippleColor="@color/colorSecondary" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

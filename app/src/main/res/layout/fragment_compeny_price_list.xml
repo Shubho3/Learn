@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp"
+        android:background="@color/colorSecondary">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:layout_margin="-1dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+                <WebView
+                    android:visibility="gone"
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- <com.github.barteksc.pdfviewer.PDFView
+                     android:id="@+id/idPDFView"
+                      android:visibility="gone"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />-->
+                <ImageView
+                     android:visibility="gone"
+                    android:id="@+id/idimageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/comp_1"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/price_img" />
+
+                        <TextView
+                            android:id="@+id/comp_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toRightOf="@+id/comp_1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:text=" Leo Torff "
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:text=" 11:00 pm "
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_10sdp"
+                            android:clickable="false"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/comp_12"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/price_img" />
+
+                        <TextView
+                            android:id="@+id/comp_112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toRightOf="@+id/comp_12"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:text=" Martin Passaquindici "
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:text=" 11:00 pm "
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_10sdp"
+                            android:clickable="false"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/comp_123"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/price_img" />
+
+                        <TextView
+                            android:id="@+id/comp_1123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toRightOf="@+id/comp_123"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:text=" Livia Torff"
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:text=" 11:00 pm "
+                            android:textColor="@color/texts"
+                            android:textSize="@dimen/_10sdp"
+                            android:clickable="false"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

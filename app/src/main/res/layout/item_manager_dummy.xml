@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:background="@drawable/background_dummy"
+        android:id="@+id/see_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/manager_image"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/user_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_toEndOf="@+id/manager_image"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/manager_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/texts"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/manager_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="false"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/texts"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

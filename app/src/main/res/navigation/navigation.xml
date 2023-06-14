@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.shubh.learn.ui.loginsignup.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splash_to_login_type"
+            app:destination="@id/login_type_nav"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
+
+            />
+        <action
+            android:id="@+id/action_splash_to__compenyHomeFragment"
+            app:destination="@id/compenyHomeFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
+
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/login_type_nav"
+        android:name="com.shubh.learn.ui.loginsignup.LoginTypeFragment"
+        android:label="LoginTypeFragment"
+        tools:layout="@layout/fragment_login_type">
+        <action
+            android:id="@+id/action_login_type_nav_to_loginCompenyFragment"
+            app:destination="@id/loginCompenyFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_type_nav_to_lloginAdminFragment"
+            app:destination="@id/loginAdminFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginCompenyFragment"
+        android:name="com.shubh.learn.ui.loginsignup.LoginCompenyFragment"
+        android:label="LoginCompenyFragment"
+        tools:layout="@layout/fragment_login_compeny">
+        <action
+            android:id="@+id/action_loginCompenyFragment_nav_to_compenyHomeFragment"
+            app:destination="@id/compenyHomeFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyHomeFragment"
+        android:name="com.shubh.learn.ui.companyHome.CompenyHomeFragment"
+        android:label="CompenyHomeFragment"
+        tools:layout="@layout/fragment_compeny_home">
+        <action
+            android:id="@+id/action_compenyFriendsListFragment_nav_to_compenyFriendsDetailsFragment"
+            app:destination="@id/compenyFriendsDetailsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_login_type_nav"
+            app:destination="@id/login_type_nav"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenyPointsFragment"
+            app:destination="@id/compenyPointsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_showQRFragment"
+            app:destination="@id/showQRFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_contactToCompanyFragment"
+            app:destination="@id/contactToCompanyFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenyPriceListFragment"
+            app:destination="@id/compenyPriceListFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenyPicturesFragment"
+            app:destination="@id/compenyPicturesFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenyFriendsListFragment"
+            app:destination="@id/compenyFriendsListFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_ccompenyNoteFragment"
+            app:destination="@id/compenyNoteFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenyManagerListFragment"
+            app:destination="@id/compenyManagerListFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyHomeFragment_nav_to_compenysettingFragment"
+            app:destination="@id/compenySettingFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyPointsFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.CompenyPointsFragment"
+        android:label="CompenyPointsFragment"
+        tools:layout="@layout/fragment_compeny_points" />
+    <fragment
+        android:id="@+id/showQRFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.ShowQRFragment"
+        android:label="ShowQRFragment"
+        tools:layout="@layout/fragment_show_qr" />
+    <fragment
+        android:id="@+id/contactToCompanyFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.ContactToCompanyFragment"
+        android:label="ContactToCompanyFragment"
+        tools:layout="@layout/fragment_contact_to_company" />
+    <fragment
+        android:id="@+id/compenyPicturesFragment"
+        android:name="com.shubh.learn.ui.companyHome.adminmanager.CompenyPicturesFragment"
+        android:label="CompenyPicturesFragment"
+        tools:layout="@layout/fragment_compeny_pictures" />
+    <fragment
+        android:id="@+id/compenyPriceListFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.CompenyPriceListFragment"
+        android:label="CompenyPriceListFragment"
+        tools:layout="@layout/fragment_compeny_price_list" />
+    <fragment
+        android:id="@+id/compenyFriendsListFragment"
+        android:name="com.shubh.learn.ui.companyHome.adminmanager.CompenyFriendsListFragment"
+        android:label="CompenyFriendsListFragment"
+        tools:layout="@layout/fragment_compeny_friends_list">
+        <action
+            android:id="@+id/action_compenyFriendsListFragment_nav_to_compenyAddFriendsFragment"
+            app:destination="@id/compenyAddFriendsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyFriendsListFragment_nav_to_compenyFriendsDetailsFragment"
+            app:destination="@id/compenyFriendsDetailsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyAddFriendsFragment"
+        android:name="com.shubh.learn.ui.companyHome.adminmanager.CompenyAddFriendsFragment"
+        android:label="CompenyAddFriendsFragment"
+        tools:layout="@layout/fragment_compeny_add_friends">
+        <action
+            android:id="@+id/action_compenyFriendsListFragment_nav_to_compenyFriendsDetailsFragment"
+            app:destination="@id/compenyFriendsDetailsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/compenyAddFriendsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyFriendsDetailsFragment"
+        android:name="com.shubh.learn.ui.companyHome.adminmanager.CompenyFriendsDetailsFragment"
+        android:label="CompenyFriendsDetailsFragment"
+        tools:layout="@layout/fragment_compeny_friends_details" />
+    <fragment
+        android:id="@+id/compenyNoteFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.CompenyNoteFragment"
+        android:label="CompenyNoteFragment"
+        tools:layout="@layout/fragment_compeny_note" />
+    <fragment
+        android:id="@+id/loginAdminFragment"
+        android:name="com.shubh.learn.ui.loginsignup.LoginAdminFragment"
+        android:label="LoginAdminFragment"
+        tools:layout="@layout/fragment_login_admin">
+        <action
+            android:id="@+id/action_loginAdminFragment_to_compenyHomeFragment"
+            app:destination="@id/compenyHomeFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@navigation/navigation"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginAdminFragment_to_signupAdminFragment"
+            app:destination="@id/signupAdminFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginAdminFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyManagerListFragment"
+        android:name="com.shubh.learn.ui.companyHome.admin.CompenyManagerListFragment"
+        android:label="CompenyManagerListFragment"
+        tools:layout="@layout/fragment_compeny_manager_list">
+        <action
+            android:id="@+id/action_compenyManagerListFragment_to_compenyAddManagersFragment"
+            app:destination="@id/compenyAddManagersFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_compenyManagerListFragment_to_compenyManagerDetailsFragment"
+            app:destination="@id/compenyManagerDetailsFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/compenyAddManagersFragment"
+        android:name="com.shubh.learn.ui.companyHome.admin.CompenyAddManagersFragment"
+        android:label="CompenyAddManagersFragment"
+        tools:layout="@layout/fragment_compeny_add_managers" />
+    <fragment
+        android:id="@+id/compenyManagerDetailsFragment"
+        android:name="com.shubh.learn.ui.companyHome.admin.CompenyManagerDetailsFragment"
+        android:label="CompenyManagerDetailsFragment"
+        tools:layout="@layout/fragment_compeny_manager_details" />
+    <fragment
+        android:id="@+id/signupAdminFragment"
+        android:name="com.shubh.learn.ui.loginsignup.SignupAdminFragment"
+        android:label="SignupAdminFragment"
+        tools:layout="@layout/fragment_signup_admin">
+        <action
+            android:id="@+id/action_loginAdminFragment_to_compenyHomeFragment"
+            app:destination="@id/compenyHomeFragment"
+
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.shubh.learn.ui.loginsignup.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/compenySettingFragment"
+        android:name="com.shubh.learn.ui.companyHome.friend.CompenySettingFragment"
+        android:label="CompenySettingFragment"
+        tools:layout="@layout/fragment_compeny_setting" />
+</navigation>

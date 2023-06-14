@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:visibility="visible"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/back_arrow"
+                android:padding="@dimen/_2sdp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/app_name"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_menu"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/manager"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:scaleType="centerInside"
+                android:layout_gravity="end"/>
+
+        </androidx.appcompat.widget.Toolbar>
+</layout>

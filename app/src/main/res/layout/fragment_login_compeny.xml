@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="-1dp"
+            android:background="@drawable/login_bg"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <RelativeLayout
+                            android:id="@+id/top1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="start">
+                            <ImageView
+                                android:id="@+id/logo"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/logo_splash" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:padding="@dimen/_6sdp"
+                            android:text="@string/welcome_back"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:padding="@dimen/_6sdp"
+                            android:text="@string/login_to_continue"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_25sdp"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/img_email"
+                            android:drawablePadding="@dimen/_15sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/texts"
+                            android:textColorHint="@color/texts"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edt_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_25sdp"
+                            android:layout_weight=".75"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/img_password"
+                            android:drawablePadding="@dimen/_15sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/texts"
+                            android:textColorHint="@color/texts"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/lay"
+                        android:gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:outlineProvider="background"
+                            android:outlineSpotShadowColor="@color/white"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/submit"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/colorPrimary"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:rippleColor="@color/colorSecondary" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+</layout>

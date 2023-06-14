@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1077187265988",
+    "project_id": "sebateks",
+    "storage_bucket": "sebateks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077187265988:android:61ec9142e022aba16c9091",
+        "android_client_info": {
+          "package_name": "com.sebateks.sebateks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077187265988-s7c320e0fvgfmgn2trg8i5ud4erdequm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sebateks.sebateks",
+            "certificate_hash": "be053cf6e79e8a61ba7f5be6681e8978782d7b5e"
+          }
+        },
+        {
+          "client_id": "1077187265988-17uhs0t685a33r6is1ljmnrhbe83b6d8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbyho9kra1ERcbTEUCAQMx2_4xBqcNvVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077187265988-17uhs0t685a33r6is1ljmnrhbe83b6d8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

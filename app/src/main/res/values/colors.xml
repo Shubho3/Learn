@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F2AC2E</color>
+    <color name="colorPrimary">#F2AC2E</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorPrimarysemi">#575856F2</color>
+    <color name="colorPrimaryYellow">#FFB800</color>
+    <color name="colorPrimaryYellow2">#FF9800</color>
+
+    <color name="colorPrimaryYellow_semi">#2CF2AC2E</color>
+    <color name="secondery">#FFE5A1</color>
+    <color name="texts">#494949</color>
+    <color name="purple_500">#5856F2</color>
+    <color name="purple_700">#5856F2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#1F1F1F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00F44336</color>
+    <color name="corner">#F7F8F8</color>
+    <color name="gray_two">#D0D0D0</color>
+    <color name="gray_two_three">#D5D1D1</color>
+    <color name="hint_text_color">#D8D3D3</color>
+    <color name="back">#FFFFFF</color>
+    <color name="icon_color">#AEC6CF</color>
+    <color name="gray">#9E16110D</color>
+    <color name="red">#F3382A</color>
+    <color name="green">#3EC100</color>
+    <color name="code_card">#1A5856F2</color>
+</resources>
